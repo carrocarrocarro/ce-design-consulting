@@ -1,0 +1,27 @@
+.wp-post-image {
+  width: auto;
+  height: 300px;
+}
+
+#article-page .page-section .content .text {
+  align-self: center;
+}
+#article-page .page-section .content .text .date {
+  text-align: center;
+  font-weight: 600;
+}
+#article-page .page-section .content .text h1 {
+  text-align: left;
+  margin-bottom: 0;
+}
+#article-page .page-section .content .article-nav {
+  align-self: center;
+  text-align: center;
+}
+#article-page .page-section .content .article-nav .next-prev {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+/*# sourceMappingURL=single-page.css.map */

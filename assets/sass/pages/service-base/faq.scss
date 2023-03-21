@@ -1,0 +1,56 @@
+#service-page {
+    .section-service-faq {
+        .service-content {
+            h2 {
+                text-align: center;
+                margin-bottom: 2em;
+            }
+
+            .faq {
+                max-width: 60rem;
+                margin: auto;
+                .faq-item {
+                    border-top: 1px solid #000;
+                    overflow: hidden;
+                    padding:1em;
+                    
+
+                    &:last-child {
+                        border-bottom: 1px solid #000;  
+                    }
+                    
+                    h3 {
+                        cursor: pointer;
+                        margin:0;
+
+                        &:after {
+                            content: '\02795';
+                            float: right;
+                        }
+                        
+                        
+                    }
+                    p {
+                        padding-top: 1em;
+                        display: none;
+                        
+                        
+                    }
+
+                    &.faq-active {
+                        p {
+                            display: block;
+                            transform: all 1s;
+                        }
+                        h3 {
+                            &:after {
+                                content: "\2796";
+                            }
+                        }
+                    }
+                    
+                }
+            }  
+        }
+    }
+}

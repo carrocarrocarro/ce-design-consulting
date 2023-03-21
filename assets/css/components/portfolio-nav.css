@@ -1,0 +1,9 @@
+.portfolio-nav-section .content .portfolio-categories-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.portfolio-nav-section .content .portfolio-categories-nav li a.portfolio-item-active {
+  background-color: blue;
+}

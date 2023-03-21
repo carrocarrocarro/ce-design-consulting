@@ -1,0 +1,31 @@
+#service-page.website-service-page .section-website-header {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#service-page.website-service-page .section-website-header.website-hero-img {
+  background-position: center;
+  background-repeat: none;
+  background-size: auto;
+}
+#service-page.website-service-page .section-website-header .website-content {
+  padding: 1em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: column;
+}
+@media (min-width: 600px) {
+  #service-page.website-service-page .section-website-header .website-content {
+    padding: 1em 2em;
+  }
+}
+@media (min-width: 1440px) {
+  #service-page.website-service-page .section-website-header .website-content {
+    padding: 0;
+  }
+}
+#service-page.website-service-page .section-website-header .website-content .text h1 {
+  margin: 0;
+}

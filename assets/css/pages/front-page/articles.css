@@ -1,0 +1,86 @@
+/* Whites */
+#front-page .section-articles .front-page-content article {
+  align-self: center;
+}
+#front-page .section-articles .front-page-content .btn {
+  align-self: center;
+}
+#front-page .section-articles .front-page-content .articles-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3em 0;
+}
+@media (min-width: 600px) {
+  #front-page .section-articles .front-page-content .articles-container {
+    flex-direction: row;
+    gap: 1em;
+  }
+}
+@media (min-width: 1000px) {
+  #front-page .section-articles .front-page-content .articles-container {
+    gap: 2em;
+  }
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link {
+  border-radius: 20px 20px 20px 20px;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+@media (min-width: 600px) {
+  #front-page .section-articles .front-page-content .articles-container .article-card-container-link {
+    flex: 0 0 47.5%;
+  }
+}
+@media (min-width: 800px) {
+  #front-page .section-articles .front-page-content .articles-container .article-card-container-link {
+    flex: 0 0 28.33333%;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  #front-page .section-articles .front-page-content .articles-container .article-card-container-link:first-child {
+    flex: 0 0 100%;
+  }
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link .article-card > .article-card-content {
+  flex: 1;
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link .article-card {
+  display: flex;
+  flex-direction: column;
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link .article-card .wp-post-image {
+  width: 100%;
+  height: auto;
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link .article-card img {
+  border-radius: 20px 20px 0 0;
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link .article-card .article-card-content {
+  justify-self: stretch;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link .article-card .article-card-content .date {
+  font-size: 1rem;
+  color: rgb(106, 106, 106);
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link .article-card .article-card-content h4 {
+  margin-top: 0;
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link .article-card .article-card-content .article-link {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+#front-page .section-articles .front-page-content .articles-container .article-card-container-link:hover {
+  box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.7) 0px 8px 16px -8px;
+  transition: box-shadow 0.3ms ease-in-out;
+  text-decoration: none;
+}

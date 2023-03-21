@@ -1,0 +1,66 @@
+/* Whites */
+html, body {
+  height: 100%;
+}
+
+a {
+  font-weight: 400;
+  color: rgb(0, 69, 137);
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(0, 106, 212);
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+.center-content {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.site-wrapper {
+  background-color: #fff;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+}
+.site-wrapper .page-wrapper {
+  flex: 1 0 auto;
+}
+.site-wrapper .page-wrapper .page-section .full-width {
+  width: 100%;
+  padding: 0;
+}
+.site-wrapper .page-wrapper .page-section .content {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 0;
+}
+@media (min-width: 1440px) {
+  .site-wrapper .page-wrapper .page-section .content {
+    padding: 0;
+  }
+}
+
+.fade-in {
+  transition: all 0.8s;
+  opacity: 0;
+  /*  transform: translateX(-40px); */
+}
+.fade-in.inview {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.4s;
+}

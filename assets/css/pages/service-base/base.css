@@ -1,0 +1,25 @@
+#service-page .section-service .service-content {
+  padding: 4em 1em 4em 1em;
+  padding: 4em 1em 4m 1em;
+}
+#service-page .section-service .service-content h1 {
+  text-align: center;
+}
+#service-page .section-service .service-content article {
+  margin: auto;
+}
+@media (min-width: 600px) {
+  #service-page .section-service .service-content {
+    padding: 6em 2em 6em 2em;
+  }
+}
+@media (min-width: 900px) {
+  #service-page .section-service .service-content {
+    padding: 8em 2em 8ems 2em;
+  }
+}
+@media (min-width: 1440px) {
+  #service-page .section-service .service-content {
+    padding-inline: 0;
+  }
+}

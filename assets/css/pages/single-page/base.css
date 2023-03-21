@@ -1,0 +1,13 @@
+#article-page .page-section .single-content {
+  padding: 1em 1em;
+}
+@media (min-width: 600px) {
+  #article-page .page-section .single-content {
+    padding: 1em 2em;
+  }
+}
+@media (min-width: 1440px) {
+  #article-page .page-section .single-content {
+    padding: 0;
+  }
+}

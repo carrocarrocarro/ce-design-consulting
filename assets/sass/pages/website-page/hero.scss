@@ -1,0 +1,43 @@
+#service-page {
+
+    &.website-service-page {
+        
+    
+        .section-website-header {
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            &.website-hero-img {
+                background-position: center;
+                background-repeat: none;
+                background-size:auto;
+                
+            }
+            .website-content {
+                
+                padding:1em 1em;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: column;
+
+                @media (min-width: 600px) {
+                    padding:1em 2em;
+                }
+                @media (min-width: 1440px) {
+                    padding: 0;
+                }
+                
+                .text {
+                    h1 {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

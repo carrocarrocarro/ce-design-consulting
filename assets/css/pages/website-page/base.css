@@ -1,0 +1,13 @@
+#service-page.website-service-page .section-website .website-content {
+  padding: 1em 1em;
+}
+@media (min-width: 600px) {
+  #service-page.website-service-page .section-website .website-content {
+    padding: 1em 2em;
+  }
+}
+@media (min-width: 1440px) {
+  #service-page.website-service-page .section-website .website-content {
+    padding: 0;
+  }
+}

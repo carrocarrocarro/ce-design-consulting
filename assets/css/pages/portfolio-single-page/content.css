@@ -1,0 +1,125 @@
+/* Whites */
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 4em 1em 0 1em;
+}
+@media (min-width: 600px) {
+  #portfolio-single-page .section-portfolio-single-header .portfolio-single-content {
+    padding: 4em 2em 0 2em;
+  }
+}
+@media (min-width: 600px) {
+  #portfolio-single-page .section-portfolio-single-header .portfolio-single-content {
+    gap: 2em;
+    padding: 6em 2em 0 2em;
+  }
+}
+@media (min-width: 900px) {
+  #portfolio-single-page .section-portfolio-single-header .portfolio-single-content {
+    padding: 8em 2em 0 2em;
+  }
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content h1 {
+  text-align: center;
+  margin: 0;
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details {
+  /* background-color: c.$primary-background-color; */
+  padding: 1em;
+  border-radius: 5px;
+  align-self: center;
+  width: 100%;
+  max-width: 40rem;
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-details-types {
+  list-style: none;
+  margin-bottom: 1em;
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-details-types .project-details-heading {
+  font-weight: 400;
+  margin-bottom: 0;
+  text-align: center;
+  display: none;
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-details-types .project-types {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  #portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-details-types .project-types {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-details-types .project-types .project-type {
+  background-color: #ffc5ab;
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  font-weight: 400;
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-details-types .project-types .project-type::before {
+  content: "#";
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-link {
+  text-align: center;
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-link .project-link-icon {
+  color: rgb(74, 74, 123);
+}
+#portfolio-single-page .section-portfolio-single-header .portfolio-single-content .project-details .project-link a {
+  font-size: 1.2rem;
+}
+
+#portfolio-single-page .section-portfolio-intro .portfolio-single-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 1em;
+}
+@media (min-width: 600px) {
+  #portfolio-single-page .section-portfolio-intro .portfolio-single-content {
+    padding: 4em 2em;
+  }
+}
+@media (min-width: 600px) {
+  #portfolio-single-page .section-portfolio-intro .portfolio-single-content {
+    padding: 6em 2em;
+  }
+}
+
+#portfolio-single-page .section-portfolio-result .portfolio-single-content {
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  #portfolio-single-page .section-portfolio-result .portfolio-single-content {
+    padding: 4em 2em;
+  }
+}
+@media (min-width: 600px) {
+  #portfolio-single-page .section-portfolio-result .portfolio-single-content {
+    padding: 6em 2em;
+  }
+}
+
+#portfolio-single-page .section-single-portfolio-images .single-portfolio-content #project-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 800px) {
+  #portfolio-single-page .section-single-portfolio-images .single-portfolio-content #project-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1100px) {
+  #portfolio-single-page .section-single-portfolio-images .single-portfolio-content #project-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -1,0 +1,65 @@
+/* Whites */
+.page-header {
+  margin-inline: 2em;
+  text-align: center;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+}
+.portfolio .portfolio-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: auto;
+  min-height: 250px;
+  text-decoration: none;
+  position: relative;
+  border-radius: 20px;
+}
+.portfolio .portfolio-item h3 {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  z-index: 30;
+  padding-inline: 1em;
+  transition: opacity 0.5s ease-in-out;
+}
+.portfolio .portfolio-item .overlay-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+  border-radius: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+.portfolio .portfolio-item:hover .overlay-item {
+  opacity: 1;
+}
+.portfolio .portfolio-item:hover h3 {
+  opacity: 1;
+}
+@media (min-width: 600px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  .portfolio {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio {
+    grid-template-columns: repeat(4, 2fr);
+  }
+}
+
+/*# sourceMappingURL=portfolio-page.css.map */

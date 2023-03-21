@@ -1,0 +1,22 @@
+.breadcrumb-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap:0.5em;
+    color: rgb(96, 96, 96);
+    .prevoius-location {
+        a {
+            color: rgb(96, 96, 96);
+            font-weight: 300;
+
+        }
+
+        &::after {
+            content: "  /";
+        }
+    }
+    
+    .current-location {
+        font-weight: 400;
+    }
+}

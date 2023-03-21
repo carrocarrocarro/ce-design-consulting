@@ -1,0 +1,17 @@
+#portfolio-single-page .section-portfolio-single-nav .portfolio-single-content {
+  margin: 2em 0;
+}
+@media (min-width: 800px) {
+  #portfolio-single-page .section-portfolio-single-nav .portfolio-single-content {
+    margin: 6em 0;
+  }
+}
+#portfolio-single-page .section-portfolio-single-nav .portfolio-single-content .portfolio-single-nav {
+  text-align: center;
+}
+#portfolio-single-page .section-portfolio-single-nav .portfolio-single-content .portfolio-single-nav .next-prev {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}

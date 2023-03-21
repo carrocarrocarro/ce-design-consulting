@@ -1,0 +1,32 @@
+#service-page {
+    .section-service-process {
+        .service-content {
+
+            h2 {
+                text-align: center;
+                margin-bottom: 2em;
+            }
+            
+            .process {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap:1em;
+                align-items: stretch;
+                @media (min-width:700px) {
+                    grid-template-columns: repeat(2,1fr);
+                }
+                @media (min-width:1200px) {
+                    grid-template-columns: repeat(3,1fr);
+                }
+
+                .process-item {
+                    height: 100%;
+                    h3 {
+                        text-align: center;
+                    }
+                    
+                }
+            } 
+        }
+    }
+}

@@ -1,0 +1,21 @@
+#front-page {
+    .page-section {
+        .front-page-content {
+            max-width: 1440px;
+            margin-inline: auto;
+            padding:4em 1em;
+
+            @media (min-width: 600px) {
+                padding:6em 2em;
+            }
+
+            @media (min-width: 900px) {
+                padding:8em 2em;
+            }
+
+            @media (min-width: 1440px) {
+                padding: 10em 0;
+            }
+        }
+    }
+}

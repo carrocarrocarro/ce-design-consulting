@@ -1,0 +1,101 @@
+/* Whites */
+#contact-page .contact-form-section {
+  background-color: #f5f5f5;
+}
+#contact-page .contact-form-section .contact-content {
+  align-items: center;
+  padding: 4em 1em;
+}
+@media (min-width: 600px) {
+  #contact-page .contact-form-section .contact-content {
+    padding: 6em 2em;
+  }
+}
+@media (min-width: 900px) {
+  #contact-page .contact-form-section .contact-content {
+    padding: 8em 2em;
+  }
+}
+@media (min-width: 1440px) {
+  #contact-page .contact-form-section .contact-content {
+    padding: 10em 0;
+  }
+}
+#contact-page .contact-form-section .contact-content h2 {
+  text-align: center;
+}
+#contact-page .contact-form-section .contact-content .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+  max-width: 35rem;
+  padding: 0;
+  color: #141414;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+#contact-page .contact-form-section .contact-content .contact-form h2 {
+  margin-top: 0;
+}
+#contact-page .contact-form-section .contact-content .contact-form .form-row {
+  display: flex;
+  flex-direction: column;
+}
+#contact-page .contact-form-section .contact-content .contact-form .contact-detail-options {
+  display: none;
+}
+#contact-page .contact-form-section .contact-content .contact-form label {
+  font-weight: 400;
+}
+#contact-page .contact-form-section .contact-content .contact-form select {
+  border-radius: 20px;
+  border: none;
+  padding: 0.8em 1em;
+  box-sizing: border-box;
+  border: none;
+}
+#contact-page .contact-form-section .contact-content .contact-form input[type=text] {
+  border-radius: 20px;
+  border: none;
+  box-sizing: border-box;
+  border: none;
+  padding: 0.8em 1em;
+}
+#contact-page .contact-form-section .contact-content .contact-form input[type=email] {
+  border-radius: 20px;
+  border: none;
+  padding: 0.8em 1em;
+  box-sizing: border-box;
+  border: none;
+}
+#contact-page .contact-form-section .contact-content .contact-form input[type=submit] {
+  border-radius: 20px;
+  border: none;
+  padding: 0.8em 1em;
+  box-sizing: border-box;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+}
+#contact-page .contact-form-section .contact-content .contact-form textarea {
+  border-radius: 20px;
+  border: none;
+  min-height: 200px;
+  resize: none;
+  padding: 0.8em 1em;
+  box-sizing: border-box;
+  border: none;
+}
+#contact-page .contact-form-section .contact-content .contact-form input, #contact-page .contact-form-section .contact-content .contact-form select, #contact-page .contact-form-section .contact-content .contact-form textarea {
+  color: #141414;
+  font-weight: 100;
+}
+#contact-page .contact-form-section .contact-content .contact-form input::-moz-placeholder {
+  color: #333333;
+  font-weight: 100;
+}
+#contact-page .contact-form-section .contact-content .contact-form input::placeholder {
+  color: #333333;
+  font-weight: 100;
+}

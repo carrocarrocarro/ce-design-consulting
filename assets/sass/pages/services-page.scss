@@ -1,0 +1,53 @@
+.services {
+    display: grid;    
+    gap: 1em;
+
+    &.web-services {
+        grid-template-columns: repeat(1, 1fr);
+        
+        @media (min-width: 800px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    &.content-services {
+        grid-template-columns: repeat(1, 1fr);
+        
+        @media (min-width: 800px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        #content-services-copy-writing {
+            grid-row: 1 / -1;
+        }
+    }
+    &.brand-services {
+        grid-template-columns: repeat(1, 1fr);
+        
+        @media (min-width: 800px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .service {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2em;
+        background-color: indianred;
+
+        .service-icon {
+            font-size: 2em;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+
+    }
+}

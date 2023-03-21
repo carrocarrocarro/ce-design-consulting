@@ -1,0 +1,29 @@
+/* Whites */
+#service-page .section-service-deliverables .service-content {
+  background-color: #f5f5f5;
+  padding: 0;
+  display: grid;
+  gap: 0;
+}
+@media (min-width: 700px) {
+  #service-page .section-service-deliverables .service-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+#service-page .section-service-deliverables .service-content article {
+  padding: 2em 1em;
+  order: 1;
+}
+@media (min-width: 700px) {
+  #service-page .section-service-deliverables .service-content article {
+    order: 2;
+  }
+}
+#service-page .section-service-deliverables .service-content img {
+  order: 2;
+}
+@media (min-width: 700px) {
+  #service-page .section-service-deliverables .service-content img {
+    order: 1;
+  }
+}

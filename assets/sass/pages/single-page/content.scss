@@ -1,0 +1,59 @@
+#article-page {
+    .section-article-header {
+        .single-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4em 1em 0 1em;
+
+            @media (min-width:600px) {
+                padding: 4em 2em 0 2em;
+            }
+
+            @media (min-width:900px) {
+                padding: 8em 2em 0 2em;
+            }
+
+            .text {
+               
+                .date {
+                    text-align: center;
+                    font-weight: 600;
+                }
+
+                h1 {
+                    text-align: left;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .section-article-main {
+        
+        .single-content {
+          
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em 1em;
+
+           @media (min-width:600px) {
+            padding: 4em 2em;
+            }
+
+           
+            .text {
+                
+                .date {
+                    text-align: center;
+                    font-weight: 600;
+                }
+
+                h1 {
+                    text-align: left;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

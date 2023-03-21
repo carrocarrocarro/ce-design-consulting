@@ -1,0 +1,78 @@
+/* Whites */
+#portfolio-page .section-header .portfolio-content {
+  text-align: center;
+}
+#portfolio-page .section-header .portfolio-content h1 {
+  margin-bottom: 0;
+}
+#portfolio-page .section-portfolio .portfolio-content .portfolio {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1em;
+}
+#portfolio-page .section-portfolio .portfolio-content .portfolio .portfolio-item {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  height: auto;
+  min-height: 250px;
+  text-decoration: none;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+}
+#portfolio-page .section-portfolio .portfolio-content .portfolio .portfolio-item .portfolio-item-info {
+  opacity: 0;
+  z-index: 30;
+  padding-inline: 1em;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  transform: translateY(100%);
+}
+#portfolio-page .section-portfolio .portfolio-content .portfolio .portfolio-item .portfolio-item-info h3 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+#portfolio-page .section-portfolio .portfolio-content .portfolio .portfolio-item .overlay-item {
+  background-color: rgba(55, 55, 55, 0.8);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 20;
+  border-radius: 20px;
+  transition: opacity 0.5s ease-in-out;
+}
+#portfolio-page .section-portfolio .portfolio-content .portfolio .portfolio-item:hover .overlay-item {
+  opacity: 1;
+}
+#portfolio-page .section-portfolio .portfolio-content .portfolio .portfolio-item:hover .portfolio-item-info {
+  opacity: 1;
+  transform: translateY(0);
+}
+#portfolio-page .section-portfolio .portfolio-content .portfolio .portfolio-item:hover {
+  box-shadow: rgba(50, 50, 93, 0.6) 0px 13px 27px -5px, rgba(0, 0, 0, 0.7) 0px 8px 16px -8px;
+}
+@media (min-width: 600px) {
+  #portfolio-page .section-portfolio .portfolio-content .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 900px) {
+  #portfolio-page .section-portfolio .portfolio-content .portfolio {
+    grid-template-columns: repeat(3, 2fr);
+  }
+}
+@media (min-width: 1200px) {
+  #portfolio-page .section-portfolio .portfolio-content .portfolio {
+    grid-template-columns: repeat(4, 2fr);
+  }
+}

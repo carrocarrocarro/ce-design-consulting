@@ -1,0 +1,19 @@
+{
+  "name": "ce-design-consulting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --no-source-map -w assets/sass/:assets/css/ ",
+    "sass:prod": "sass --no-source-map --style=compressed -w assets/sass/style.scss:style.css",
+    "copy:css": "copyfiles assets/css/style.css ./",
+    "run:all": "npm-run-all sass sass:prod"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.58.2"
+  }
+}

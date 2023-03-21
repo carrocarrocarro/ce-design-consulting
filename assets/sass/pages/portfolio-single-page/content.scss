@@ -1,0 +1,154 @@
+@use '../../globals/colors.scss' as c;
+@use '../../globals/variables.scss' as v;
+#portfolio-single-page {
+  
+    .section-portfolio-single-header {
+        
+        .portfolio-single-content {
+            display: flex;
+            flex-direction: column;
+            gap:1em;
+            padding: 4em 1em 0 1em;
+
+            @media (min-width:600px) {
+                padding: 4em 2em 0 2em;
+            }
+    
+            @media (min-width:600px) {
+                gap:2em;
+                padding: 6em 2em 0 2em;
+            }
+
+            @media (min-width:900px) {
+                padding: 8em 2em 0 2em;
+            }
+
+            h1 {
+                text-align: center;
+                margin:0;
+            }
+            
+
+            .project-details {
+                /* background-color: c.$primary-background-color; */
+                padding:1em;
+                border-radius: 5px;
+                align-self: center;
+                width: 100%;
+                max-width: 40rem;
+            
+                .project-details-types {
+                    list-style: none;
+                    margin-bottom: 1em;
+
+                    .project-details-heading {
+                        font-weight: 400;
+                        margin-bottom: 0;
+                        text-align: center;
+                        display: none;
+                    }
+
+                    .project-types {
+                        display: flex;
+                        gap: 1em;
+                        align-items: center;
+                        flex-direction: column;
+                        @media (min-width: 600px) {
+                            flex-direction: row;
+                            justify-content: center;
+                        }
+                        .project-type {
+                            background-color: c.$apricot-color;
+                            padding:0.3em 0.5em;
+                            border-radius: 5px;
+                            box-shadow: v.$box-shadow;
+                            font-weight: 400;
+                            &::before {
+                                content: "#";
+                            }
+                        }
+                    
+                    }
+                }
+
+                .project-link {
+                    text-align: center;
+
+                    .project-link-icon {
+                        color: rgb(74, 74, 123);
+                    }
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+                
+
+            }
+
+            
+        }
+    }
+}
+
+#portfolio-single-page {
+  
+    .section-portfolio-intro {
+        
+        .portfolio-single-content {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           padding: 2em 1em;
+
+           @media (min-width:600px) {
+            padding: 4em 2em;
+            }
+
+            @media (min-width:600px) {
+                padding: 6em 2em;
+            }
+        }
+    }
+}
+
+#portfolio-single-page {
+  
+    .section-portfolio-result {
+        
+        .portfolio-single-content {
+            
+            padding: 2em 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (min-width:600px) {
+                padding: 4em 2em;
+            }
+
+            @media (min-width:600px) {
+                padding: 6em 2em;
+            }
+        }
+    }
+}
+
+#portfolio-single-page {
+  
+    .section-single-portfolio-images {
+       
+        .single-portfolio-content {
+            
+            #project-images {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                @media (min-width:800px) {
+                    grid-template-columns: repeat(3, 1fr); 
+                }
+                @media (min-width:1100px) {
+                    grid-template-columns: repeat(4, 1fr); 
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+/* Whites */
+#front-page .section-front-page-hero {
+  background-color: #FFEBE7;
+  min-height: 30vh;
+}
+#front-page .section-front-page-hero .hero-content {
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#front-page .section-front-page-hero .hero-content .hero-text {
+  max-width: 1440px;
+  margin: auto;
+  text-align: center;
+  padding: 4em 0;
+  font-size: 1.4rem;
+}
+@media (min-width: 600px) {
+  #front-page .section-front-page-hero .hero-content .hero-text {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  #front-page .section-front-page-hero .hero-content .hero-text {
+    font-size: 4rem;
+  }
+}
+#front-page .section-front-page-hero .hero-content .hero-text .cursor {
+  display: inline-block;
+  background-color: #000;
+  animation: blink 1s infinite;
+  width: 2px;
+}
+@keyframes blink {
+  0% {
+    background-color: #000;
+  }
+  49% {
+    background-color: #000;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+#front-page .section-front-page-hero .hero-content .about {
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#front-page .section-front-page-hero .hero-content .about span {
+  text-transform: uppercase;
+  letter-spacing: 2%;
+  font-weight: 400;
+}
+#front-page .section-front-page-hero .hero-content .about h1 {
+  text-align: left;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 2%;
+}
+#front-page .section-description .front-page-content article {
+  padding: 4em 1em 0 1em;
+  margin: auto;
+}
+#front-page .section-description .front-page-content article h2 {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+@media (min-width: 600px) {
+  #front-page .section-description .front-page-content article h2 {
+    font-size: 2rem;
+  }
+}

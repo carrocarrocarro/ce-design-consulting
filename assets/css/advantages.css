@@ -1,0 +1,44 @@
+/* Whites */
+#front-page .section-advantages {
+  background-color: #d2b6a9;
+}
+#front-page .section-advantages .front-page-content .advantages-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 800px) {
+  #front-page .section-advantages .front-page-content .advantages-container {
+    flex-direction: row;
+  }
+}
+#front-page .section-advantages .front-page-content .advantages-container .advantage-card {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  #front-page .section-advantages .front-page-content .advantages-container .advantage-card {
+    padding: 1em;
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 900px) {
+  #front-page .section-advantages .front-page-content .advantages-container .advantage-card {
+    padding: 1em;
+    flex: 0 0 33.3333%;
+  }
+}
+#front-page .section-advantages .front-page-content .advantages-container .advantage-card h4 {
+  /*  &::before{
+      content: '\2713';
+      font-size: 2rem;
+      position: absolute;
+      } */
+  margin-top: 0;
+}
+#front-page .section-advantages .front-page-content .advantages-container .advantage-card .check-icon {
+  color: #FFEBE7;
+  font-size: 4rem;
+  align-self: center;
+}

@@ -1,0 +1,59 @@
+#service-page.website-service-page .section-web-packages {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#service-page.website-service-page .section-web-packages.website-hero-img {
+  background-position: center;
+  background-repeat: none;
+  background-size: auto;
+}
+#service-page.website-service-page .section-web-packages .website-content .web-packages {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+@media (min-width: 800px) {
+  #service-page.website-service-page .section-web-packages .website-content .web-packages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3%;
+  }
+}
+@media (min-width: 1200px) {
+  #service-page.website-service-page .section-web-packages .website-content .web-packages {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1em;
+  }
+}
+#service-page.website-service-page .section-web-packages .website-content .web-packages .web-package {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: antiquewhite;
+  padding: 1em;
+}
+@media (min-width: 800px) {
+  #service-page.website-service-page .section-web-packages .website-content .web-packages .web-package {
+    flex: 0 0 48.5%;
+  }
+}
+@media (min-width: 1200px) {
+  #service-page.website-service-page .section-web-packages .website-content .web-packages .web-package {
+    flex: 1;
+  }
+}
+#service-page.website-service-page .section-web-packages .website-content .web-packages .web-package h3 {
+  margin: 0;
+  text-align: center;
+}
+#service-page.website-service-page .section-web-packages .website-content .web-packages .web-package .project-slogan {
+  margin: 0;
+  font-style: italic;
+  text-align: center;
+}
+#service-page.website-service-page .section-web-packages .website-content .web-packages .web-package .btn {
+  justify-self: flex-end;
+}

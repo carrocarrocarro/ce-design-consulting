@@ -1,0 +1,47 @@
+@use './../../globals/colors.scss' as c;
+#front-page {
+    .section-advantages {
+        background-color: c.$tritary-background-color;
+        .front-page-content {
+            .advantages-container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                
+                @media (min-width:800px) {
+                    flex-direction: row;
+                }
+            
+                .advantage-card {
+                    display: flex;
+                    flex-direction: column;
+                    @media (min-width:600px) {
+                        padding:1em;
+                        flex: 0 0 50%;
+                    }
+                    @media (min-width:900px) {
+                        padding:1em;
+                        flex: 0 0 33.3333%;
+                    }
+
+                    h4 {
+                    /*  &::before{
+                        content: '\2713';
+                        font-size: 2rem;
+                        position: absolute;
+                        } */
+                        margin-top: 0;
+                    }
+                    .check-icon {
+                        color: c.$misty-rose;
+                        font-size: 4rem;
+                        align-self: center;
+
+                    }
+                }
+            }
+        }
+    }
+}

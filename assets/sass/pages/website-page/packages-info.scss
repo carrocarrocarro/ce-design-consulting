@@ -1,0 +1,25 @@
+#service-page {
+
+    &.website-service-page {
+    
+        .section-website-package-info {
+
+            .website-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap:1em;
+
+            }
+
+        }
+        
+        .section-website-package-bonus {
+            .website-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

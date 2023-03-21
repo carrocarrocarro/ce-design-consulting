@@ -1,0 +1,22 @@
+/* Whites */
+#contact-page .contact-content {
+  padding: 4em 1em;
+}
+@media (min-width: 600px) {
+  #contact-page .contact-content {
+    padding: 6em 2em;
+  }
+}
+@media (min-width: 900px) {
+  #contact-page .contact-content {
+    padding: 8em 2em;
+  }
+}
+@media (min-width: 1440px) {
+  #contact-page .contact-content {
+    padding: 10em 0;
+  }
+}
+#contact-page .contact-content .text {
+  align-self: center;
+}

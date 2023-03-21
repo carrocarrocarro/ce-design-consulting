@@ -1,0 +1,77 @@
+@use "./../../globals/colors.scss" as c;
+@use "./../../globals/variables.scss" as v;
+@use "./../../globals/typography.scss" as t;
+#about-page {
+
+    .section-core-values {
+        background-color: c.$primary-background-color;
+        .about-content {
+           
+            padding:3em 1em;
+
+            @media (min-width: 600px) {
+                padding:6em 2em;
+            } 
+
+            @media (min-width: 1440px) {
+                padding: 6em 0;
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 2em;
+            }
+
+            #core-values {
+                display: grid;
+                gap:2em;
+                grid-template-columns: repeat(1, 1fr);
+            
+                @media (min-width: 800px) {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap:2em;
+                }
+
+                @media (min-width: 1200px) {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+                .core-value{
+                    align-self:auto;
+
+                    .core-value-icon {
+                        display: none;
+                        font-size: 4rem;
+                        text-align: center;
+                        color: c.$apricot-color;
+                    }
+
+                    h3 {
+                        text-align: left;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .section-vision {
+        .about-content {
+            .text {
+                align-self: center;
+                padding:2em 1em;
+                /* background-color: c.$apricot-color; */
+                text-align: center;
+                /* border-radius: v.$border-radius;
+                box-shadow: v.$box-shadow; */
+                h2 {
+                    margin-top:0;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    font-size:1.8rem;
+                    font-family: t.$secondary-font;
+                }
+            }
+        }
+    }
+}

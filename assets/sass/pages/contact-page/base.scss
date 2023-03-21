@@ -1,0 +1,24 @@
+@use './../../globals/colors.scss' as c;
+@use './../../globals/variables.scss' as v;
+
+#contact-page {
+    .contact-content {
+        padding:4em 1em;
+
+        @media (min-width: 600px) {
+            padding:6em 2em;
+        }
+
+        @media (min-width: 900px) {
+            padding:8em 2em;
+        }
+
+        @media (min-width: 1440px) {
+            padding: 10em 0;
+        }
+        
+        .text {
+            align-self: center;
+        }
+    }
+}

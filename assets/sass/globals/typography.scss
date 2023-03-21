@@ -1,0 +1,71 @@
+@use './colors.scss' as c;
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Courgette&display=swap);
+$josefine-sans: 'Josefin Sans', sans-serif;
+$secondary-font:'Courgette', cursive;
+
+html {font-size: 100%;} /*16px*/
+
+body {
+    font-family: $josefine-sans;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+
+
+p {
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    color: c.$primary-font-color;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: $josefine-sans;
+  font-weight: 500;
+  line-height: 1.3;
+  color: c.$secondary-font-color;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+  
+h2 {
+    font-size: 2.441rem;
+    margin-top: 0;
+}
+
+h3 {font-size: 1.953rem;
+margin-top: 0;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+.text {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+
+ul {
+    list-style-position: inside;
+}

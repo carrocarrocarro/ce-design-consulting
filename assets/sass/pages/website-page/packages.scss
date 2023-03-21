@@ -1,0 +1,79 @@
+#service-page {
+
+    &.website-service-page {
+        
+    
+        .section-web-packages {
+            min-height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+            &.website-hero-img {
+                background-position: center;
+                background-repeat: none;
+                background-size:auto;
+                
+            }
+            .website-content {
+                
+                .web-packages {
+                    display: flex;
+                    flex-direction: column;
+                    gap:1em;
+
+                    @media (min-width: 800px) {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap:3%;
+                    }
+
+                    @media (min-width: 1200px) {
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        gap: 1em;
+                    }
+                    .web-package {
+                        display: flex;
+                        flex-direction: column;
+                        gap:1em;
+                        background-color: antiquewhite;
+                        padding:1em;
+
+                        @media (min-width: 800px) {
+                            flex: 0 0 48.5%;
+                        }
+
+                        @media (min-width: 1200px) {
+                            flex: 1;
+                        }
+
+
+                        h3 {
+                            margin: 0;
+                            text-align: center;
+                        }
+                        .project-slogan {
+                            margin: 0;
+                            font-style: italic;
+                            text-align: center;
+
+                        }
+                        .project-list {
+                            li {
+
+                            }
+                        }
+
+                        .btn {
+                            justify-self: flex-end;
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

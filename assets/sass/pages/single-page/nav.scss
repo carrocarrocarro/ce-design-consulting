@@ -1,0 +1,41 @@
+#article-page {
+    .section-single-nav{
+        margin-bottom: 3em;
+        .single-content {
+            padding:1em 1em;
+
+            @media (min-width: 600px) {
+                padding:1em 2em;
+            }
+            @media (min-width: 1440px) {
+                padding: 0;
+            } 
+            .article-nav {
+                align-self: center;
+                text-align: center;
+                .next-prev {
+                    display: flex;
+                    justify-content: center;
+                    gap:1em;
+                    margin-bottom: 2em;
+
+                    a {
+                        &:first-child {
+                            &::before {
+                                content:"< ";
+                            }
+                        }
+                    }
+
+                    a {
+                        &:nth-child(2) {
+                            &::after {
+                                content:" >";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
